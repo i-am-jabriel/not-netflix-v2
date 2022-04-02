@@ -1,16 +1,16 @@
 ## Not Netflix 2.0
-
+<img src ='https://i2.wp.com/www.alphr.com/wp-content/uploads/2018/11/What-to-do-if-Netflix-wont-work-in-Chrome1.jpg?fit=900%2C488&ssl=1'/>
 Requirements:
 
     [x] Connect to movie database api to grab lists of movies
 
     [x] Display a list of movies
     
-    [ ] Search Functionality
+    [x] Search Functionality
 
 Tasks:
 
-[ ] Create some networks request to fetch movies
+[x] Create some networks request to fetch movies
 
     [x] Create an account to get TMDB api keys
 
