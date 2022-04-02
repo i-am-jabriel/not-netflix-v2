@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import SingleMovie from './Components/SingleMovie/SingleMovie';
 import MovieList from './Components/MovieList/MovieList';
 import { useEffect, useState } from 'react';
 import { fetchMoviesFromDatabase } from './NetworkConnections';

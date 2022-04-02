@@ -7,6 +7,7 @@ export default function MovieList(props){
     useEffect(() => {
         fetchMoviesFromDatabase(props.list)
             .then(res => setMovies(res.results));
+    // eslint-disable-next-line
     }, []);
     
     return <div className='movie-list-container'>

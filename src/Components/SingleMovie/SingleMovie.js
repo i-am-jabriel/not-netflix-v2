@@ -10,6 +10,7 @@ export default function SingleMovie(props){
         // fetch movie if it not coming in from parent
         fetchMoviesFromDatabase(`movie/${props.id}`)
             .then(res => setMovie(res))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     console.log(movie?.genre_ids);
