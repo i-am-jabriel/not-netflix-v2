@@ -3,6 +3,7 @@ import MovieList from './Components/MovieList/MovieList';
 import { useEffect, useState } from 'react';
 import { fetchMoviesFromDatabase } from './NetworkConnections';
 import Calendar from 'react-calendar';
+import GenreSelection from './Components/GenreSelection/GenreSelection';
 
 function App() {
   const [movieGenres, setMovieGenres] = useState([]);
@@ -21,7 +22,7 @@ function App() {
   }, []);
   return (
     <div className='main-container'>
-      <h1>Hello World!</h1>
+      <GenreSelection movieGenres={movieGenres}/>      
       {/* <SingleMovie id='12' genres={genres}/> */}
       <MovieList list='trending/all/day' title='Trending In Films' movieGenres={movieGenres} tvGenres={tvGenres}/>
       <MovieList list='movie/upcoming' title='Upcoming Movies' movieGenres={movieGenres} tvGenres={tvGenres}/>

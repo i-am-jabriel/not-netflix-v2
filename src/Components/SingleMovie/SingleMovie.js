@@ -13,8 +13,6 @@ export default function SingleMovie(props){
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    console.log(movie?.genre_ids);
-
     const genres = movie?.original_title ? props.movieGenres : props.tvGenres
     // const doSomething
     return <div className='movie-card'>
